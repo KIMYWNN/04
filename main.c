@@ -2,16 +2,30 @@
 
 
 int main(void) {
-    int x, y, z, m;
-    int a, b, c;
-    x =2 ;
-    z=1;
-    a=3;
-    b=4;
-    c=5;
+    int op1, op2;
+    int res;
+    
+    printf("input two integers:");
+    scanf("%i %i", &op1, &op2);
 
-    y = a*x*x + b*x + c;
-    m = x+y+z/3;
-    printf("y=%d, m=%d",y, m);
+    res = op1 + op2;
+    printf("%i+%i = %i\n", op1, op2, res);
 
+    res = op1 - op2;
+    printf("%i-%i = %i\n", op1, op2, res);
+
+    res = op1 * op2;
+    printf("%i*%i = %i\n", op1, op2, res);
+    
+    res = op1/op2;
+    printf("%i/%i = %i\n", op1, op2, res);
+
+    res = op1 % op2;
+    printf("%i %% %i = %i\n", op1, op2, res);
+
+    return 0;
+
+
+
+    
 }
